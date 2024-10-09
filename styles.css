@@ -203,7 +203,7 @@ footer a:hover {
     transform: scale(1.2);
 }
 
-/* Media Queries */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
@@ -211,6 +211,7 @@ footer a:hover {
 
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
@@ -221,77 +222,25 @@ footer a:hover {
         width: 120px;
         height: 120px;
     }
-}
-/* Existing styles untouched */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #f3ec78, #af4261);
-    color: #333;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-header h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-header img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #4a90e2;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    header img {
-        width: 150px;
-        height: 150px;
-    }
-
-    section h2 {
-        font-size: 1.5em;
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 90%;
     }
 
     .card {
-        padding: 10px;
+        margin: 15px 0;
+        padding: 15px;
     }
 
-    ul li {
-        font-size: 1em;
+    #projects ul li {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .contact-info ul {
-        padding: 0;
-    }
-
-    .contact-info li {
-        font-size: 1em;
-    }
-
-    .social-icons a {
-        font-size: 1.2em;
+    #projects ul li img {
+        margin-left: 0;
+        margin-top: 15px;
     }
 }
